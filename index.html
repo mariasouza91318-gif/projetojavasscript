@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusTech | Hardware, Periféricos & Alta Performance</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVEGAÇÃO ================= -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" data-page="inicio">
+        <img src="https://placehold.co/40x40/00f0ff/0a0e17?text=NT" alt="Logotipo NexusTech">
+        <span>Nexus<strong>Tech</strong></span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Menu Principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active" data-page="inicio">Início</a></li>
+          <li><a href="#hardware" class="nav-link" data-page="hardware">Hardware</a></li>
+          <li><a href="#perifericos" class="nav-link" data-page="perifericos">Periféricos</a></li>
+          <li><a href="#notebooks" class="nav-link" data-page="notebooks">Notebooks & PCs</a></li>
+          <li><a href="#sobre" class="nav-link" data-page="sobre">Sobre Nós</a></li>
+          <li><a href="#contato" class="nav-link" data-page="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="open-cart-btn" aria-label="Abrir Carrinho">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CONTEÚDO PRINCIPAL (SPA) ================= -->
+  <main class="main-content">
+
+    <!-- PÁGINA 1: INÍCIO -->
+    <section id="page-inicio" class="page-section active">
+      
+      <!-- Carrossel Hero -->
+      <div class="carousel" id="hero-carousel">
+        <div class="carousel-track">
+          
+          <div class="carousel-slide active">
+            <img src="https://placehold.co/1920x600/0f172a/00f0ff?text=RTX+5080+ULTRA+SERIES+-+BANNER+1" alt="Placa de Vídeo RTX Série 5000 em destaque">
+            <div class="carousel-overlay">
+              <div class="container carousel-content">
+                <span class="badge-promo">LANÇAMENTO MUNDIAL</span>
+                <h1>Domine o Ray Tracing em 4K Nativo</h1>
+                <p>Nova geração de placas de vídeo com arquitetura neural e refrigeração líquida integrada.</p>
+                <button class="btn btn-primary" data-page="hardware">Ver Hardware</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://themes.kabum.com.br/conteudo/carrossel/9771/cel/1795023840.png" alt="Setup completo com periféricos mecânicos e monitor ultrawide">
+            <div class="carousel-overlay">
+              <div class="container carousel-content">
+                <span class="badge-promo">ATÉ 35% OFF NO PIX</span>
+                <h1>Precisão Competitiva sem Latência</h1>
+                <p>Teclados magnéticos Rapid Trigger e mouses ultralight de 49g para máxima resposta.</p>
+                <button class="btn btn-primary" data-page="perifericos">Explorar Periféricos</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://themes.kabum.com.br/conteudo/carrossel/9816/cel/1794834718.gif" alt="Notebook gamer ultrafino aberto em mesa iluminada">
+            <div class="carousel-overlay">
+              <div class="container carousel-content">
+                <span class="badge-promo">FRETE GRÁTIS BRASIL</span>
+                <h1>Poder de Desktop Onde Você Estiver</h1>
+                <p>Notebooks equipados com processadores Core Ultra 9, telas OLED 240Hz e chassi em alumínio.</p>
+                <button class="btn btn-primary" data-page="notebooks">Conferir Notebooks</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control prev" id="prev-slide" aria-label="Slide Anterior">&#10094;</button>
+        <button class="carousel-control next" id="next-slide" aria-label="Próximo Slide">&#10095;</button>
+
+        <div class="carousel-indicators" id="carousel-dots">
+          <button class="dot active" data-slide="0" aria-label="Ir para slide 1"></button>
+          <button class="dot" data-slide="1" aria-label="Ir para slide 2"></button>
+          <button class="dot" data-slide="2" aria-label="Ir para slide 3"></button>
+        </div>
+      </div>
+
+      <!-- Seção Categoria 1: Ofertas em Hardware -->
+      <div class="container category-block">
+        <div class="section-header">
+          <h2>Ofertas em Hardware</h2>
+          <a href="#hardware" class="view-all" data-page="hardware">Ver tudo &rarr;</a>
+        </div>
+        <div class="product-grid">
+          
+          <article class="product-card" data-id="hw-1" data-name="Placa de Vídeo RTX 4070 Ti Super 16GB" data-price="5499.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-15%</span>
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/955833/medium/Xiaomi-Mi-17-Pro-Max-512gb-12gb-Ram-Black_1770927174.jpg" alt="Placa de Vídeo RTX 4070 Ti Super 16GB">
+            </div>
+            <div class="product-info">
+              <div class="rating" aria-label="5 de 5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(48)</span></div>
+              <h3>Placa de Vídeo RTX 4070 Ti Super 16GB GDDR6X</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 6.499,00</span>
+                <span class="current-price">R$ 5.499,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-2" data-name="Processador Ryzen 7 7800X3D 5.0GHz" data-price="2799.00">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-12%</span>
+              <img src="https://themes.kabum.com.br/conteudo/carrossel/9798/cel/1794512027.png"Processador AMD Ryzen 7 7800X3D">
+            </div>
+            <div class="product-info">
+              <div class="rating" aria-label="5 de 5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(92)</span></div>
+              <h3>Processador AMD Ryzen 7 7800X3D 8-Core 5.0GHz</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 3.199,00</span>
+                <span class="current-price">R$ 2.799,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-3" data-name="SSD NVMe 2TB PCIe Gen4 7400MB/s" data-price="899.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-20%</span>
+              <img src="https://images6.kabum.com.br/produtos/fotos/134176/cadeira-gamer-husky-tempest-700-ate-145kg-almofadas-reclinavel-150-pu-descanso-para-pes-preta-hcg700pt_1760035650_m.jpg" alt="SSD NVMe M.2 2TB Alta Velocidade">
+            </div>
+            <div class="product-info">
+              <div class="rating" aria-label="4.5 de 5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(64)</span></div>
+              <h3>SSD NVMe M.2 2TB PCIe Gen4 Leitura 7400MB/s</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 1.129,00</span>
+                <span class="current-price">R$ 899,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-4" data-name="Memória RAM DDR5 32GB (2x16GB) 6000MHz" data-price="949.00">
+            <div class="product-img-wrapper">
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/383179/Computador-Completo-3green-Intel-Core-I7-8GB-RAM-SSD-240GB-Windows-10-Monitor-19-5-Kit-Perif-ricos_1725975424_m.jpg" alt="Kit Memória RAM DDR5 32GB RGB">
+            </div>
+            <div class="product-info">
+              <div class="rating" aria-label="5 de 5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(31)</span></div>
+              <h3>Memória RAM DDR5 32GB (2x16GB) 6000MHz CL30 RGB</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 1.099,00</span>
+                <span class="current-price">R$ 949,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Seção Categoria 2: Periféricos Gamer -->
+      <div class="container category-block">
+        <div class="section-header">
+          <h2>Periféricos Gamer</h2>
+          <a href="#perifericos" class="view-all" data-page="perifericos">Ver tudo &rarr;</a>
+        </div>
+        <div class="product-grid">
+
+          <article class="product-card" data-id="per-1" data-name="Teclado Mecânico Magnético 75% RGB" data-price="649.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-18%</span>
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/1061775/medium/Headset-Gamer-Ninja-Shadow-3-5mm-Usb-PC-Rainbow-Drivers-50mm-Black-Gn-h02_1785769124.jpg" alt="Teclado Mecânico Gamer 75% com Switches Magnéticos">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(115)</span></div>
+              <h3>Teclado Mecânico Magnético 75% Rapid Trigger RGB</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 799,00</span>
+                <span class="current-price">R$ 649,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-2" data-name="Mouse Gamer Wireless Pro 26K DPI" data-price="429.00">
+            <div class="product-img-wrapper">
+              <img src=https://images5.kabum.com.br/produtos/fotos/1017205/monitor-gamer-curvo-asus-tuf-27-qhd-320hz-0-3ms-fast-ips-freesync-altura-ajustavel-som-integrado-vg27aqml5f_1789415720_m.jpg" alt="Mouse Gamer Sem Fio Ultraleve Preto">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(87)</span></div>
+              <h3>Mouse Gamer Sem Fio Ultralight 49g Sensor 26K DPI</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 549,00</span>
+                <span class="current-price">R$ 429,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-3" data-name="Headset Wireless 7.1 Surround Spatial" data-price="589.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-15%</span>
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/1061775/medium/Headset-Gamer-Ninja-Shadow-3-5mm-Usb-PC-Rainbow-Drivers-50mm-Black-Gn-h02_1785769124.jpg" alt="Headset Gamer Sem Fio com Microfone Removível">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(53)</span></div>
+              <h3>Headset Gamer Wireless 7.1 Drivers 50mm Bateria 60h</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 699,00</span>
+                <span class="current-price">R$ 589,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-4" data-name="Microfone Condensador USB Estúdio" data-price="379.00">
+            <div class="product-img-wrapper">
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/1061775/medium/Headset-Gamer-Ninja-Shadow-3-5mm-Usb-PC-Rainbow-Drivers-50mm-Black-Gn-h02_1785769124.jpg" alt="Microfone Condensador USB com Braço Articulado">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(41)</span></div>
+              <h3>Microfone Condensador USB Cardioide com Filtro Pop</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 459,00</span>
+                <span class="current-price">R$ 379,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Seção Categoria 3: Monitores e Notebooks -->
+      <div class="container category-block">
+        <div class="section-header">
+          <h2>Monitores e Notebooks</h2>
+          <a href="#notebooks" class="view-all" data-page="notebooks">Ver tudo &rarr;</a>
+        </div>
+        <div class="product-grid">
+
+          <article class="product-card" data-id="nb-1" data-name="Monitor Gamer 27' QHD IPS 240Hz 0.5ms" data-price="2199.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-16%</span>
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/1026536/medium/Monitor-Dell-Pro-24-Plus-Hub-P2426e_1778600618.jpg" alt="Monitor Gamer 27 Polegadas QHD 240Hz">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(76)</span></div>
+              <h3>Monitor Gamer 27" QHD Fast IPS 240Hz 0.5ms HDR400</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 2.599,00</span>
+                <span class="current-price">R$ 2.199,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="nb-2" data-name="Notebook Gamer Titan 16' i7 RTX 4060" data-price="7499.00">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-10%</span>
+              <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/1015942/medium/Smartphone-Moto-G06-128GB-C-mera-Traseira-50mp-Bege-Motorola_1793367217.jpg" alt="Notebook Gamer 16 Polegadas Core i7 RTX 4060">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(29)</span></div>
+              <h3>Notebook Gamer Titan 16" Core i7-14700HX 16GB RTX 4060</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 8.299,00</span>
+                <span class="current-price">R$ 7.499,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="nb-3" data-name="Monitor Ultrawide Curvo 34' WQHD 165Hz" data-price="2649.90">
+            <div class="product-img-wrapper">
+              <img src="https://images.kabum.com.br/produtos/fotos/1065227/monitor-gamer-aoc-agon-27-quad-hd-oled-240hz-0-03ms-g-sync-preto-q27g4zdr_1791403514_m.jpg" alt="Monitor Curvo Ultrawide 34 Polegadas">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(44)</span></div>
+              <h3>Monitor Ultrawide Curvo 34" WQHD 165Hz 1ms FreeSync</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 2.999,00</span>
+                <span class="current-price">R$ 2.649,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="nb-4" data-name="Ultrabook Dev Pro 14' OLED 32GB RAM" data-price="6899.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/22d3ee?text=Ultrabook+OLED+32GB" alt="Ultrabook Profissional 14 Polegadas OLED">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(19)</span></div>
+              <h3>Ultrabook Dev Pro 14" OLED 2.8K Core Ultra 7 32GB 1TB</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 7.599,00</span>
+                <span class="current-price">R$ 6.899,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 2: HARDWARE -->
+    <section id="page-hardware" class="page-section">
+      <div class="page-banner">
+        <img src="https://placehold.co/1920x300/0f172a/00f0ff?text=DEPARTAMENTO+DE+HARDWARE" alt="Banner Departamento de Hardware">
+        <div class="page-banner-text">
+          <h1>Hardware de Alta Performance</h1>
+          <p>Componentes selecionados para overclock, renderização 3D e jogos competitivos.</p>
+        </div>
+      </div>
+      <div class="container category-block">
+        <div class="product-grid">
+          <article class="product-card" data-id="hw-1" data-name="Placa de Vídeo RTX 4070 Ti Super 16GB" data-price="5499.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-15%</span>
+              <img src="https://placehold.co/400x300/1e293b/00f0ff?text=RTX+4070+Ti+Super" alt="Placa de Vídeo RTX 4070 Ti Super">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(48)</span></div>
+              <h3>Placa de Vídeo RTX 4070 Ti Super 16GB GDDR6X</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 6.499,00</span>
+                <span class="current-price">R$ 5.499,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-2" data-name="Processador Ryzen 7 7800X3D 5.0GHz" data-price="2799.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/00f0ff?text=Ryzen+7+7800X3D" alt="Processador Ryzen 7 7800X3D">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(92)</span></div>
+              <h3>Processador AMD Ryzen 7 7800X3D 8-Core 5.0GHz</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 3.199,00</span>
+                <span class="current-price">R$ 2.799,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-5" data-name="Placa-Mãe B650E Aorus Wi-Fi 6E DDR5" data-price="1899.90">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/00f0ff?text=Placa+Mae+B650E" alt="Placa-Mãe ATX Chipset B650E DDR5">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(37)</span></div>
+              <h3>Placa-Mãe B650E Elite AX Wi-Fi 6E Socket AM5 DDR5</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 2.199,00</span>
+                <span class="current-price">R$ 1.899,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="hw-6" data-name="Fonte Modular 850W 80 Plus Gold ATX 3.0" data-price="789.00">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">-10%</span>
+              <img src="https://placehold.co/400x300/1e293b/00f0ff?text=Fonte+850W+Gold" alt="Fonte de Alimentação Modular 850W 80 Plus Gold">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(60)</span></div>
+              <h3>Fonte Full Modular 850W 80 Plus Gold PCIe 5.0 ATX 3.0</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 879,00</span>
+                <span class="current-price">R$ 789,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 3: PERIFÉRICOS -->
+    <section id="page-perifericos" class="page-section">
+      <div class="page-banner">
+        <img src="https://placehold.co/1920x300/111827/38bdf8?text=PERIFERICOS+E+ACESSORIOS" alt="Banner Periféricos Gamer">
+        <div class="page-banner-text">
+          <h1>Periféricos & Acessórios Pro</h1>
+          <p>Ergonomia, precisão milimétrica e áudio imersivo para elevar seu nível de jogo.</p>
+        </div>
+      </div>
+      <div class="container category-block">
+        <div class="product-grid">
+          <article class="product-card" data-id="per-1" data-name="Teclado Mecânico Magnético 75% RGB" data-price="649.90">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/38bdf8?text=Teclado+Magnetico+75%25" alt="Teclado Mecânico Magnético 75%">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(115)</span></div>
+              <h3>Teclado Mecânico Magnético 75% Rapid Trigger RGB</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 799,00</span>
+                <span class="current-price">R$ 649,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-2" data-name="Mouse Gamer Wireless Pro 26K DPI" data-price="429.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/38bdf8?text=Mouse+Wireless+49g" alt="Mouse Gamer Wireless Ultralight">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(87)</span></div>
+              <h3>Mouse Gamer Sem Fio Ultralight 49g Sensor 26K DPI</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 549,00</span>
+                <span class="current-price">R$ 429,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-5" data-name="Mousepad Speed Cordura XL 900x400mm" data-price="149.90">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/38bdf8?text=Mousepad+XL+900x400" alt="Mousepad Gamer Extra Grande">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(140)</span></div>
+              <h3>Mousepad Gamer Speed Tecido Cordura XL 900x400x4mm</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 189,00</span>
+                <span class="current-price">R$ 149,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="per-6" data-name="Webcam 4K 60fps HDR Auto-Foco" data-price="529.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/38bdf8?text=Webcam+4K+60fps" alt="Webcam 4K para Streaming">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(28)</span></div>
+              <h3>Webcam Streamer 4K 60fps Sensor Sony HDR com Tampa</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 629,00</span>
+                <span class="current-price">R$ 529,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 4: NOTEBOOKS & PCS -->
+    <section id="page-notebooks" class="page-section">
+      <div class="page-banner">
+        <img src="https://placehold.co/1920x300/090d16/22d3ee?text=NOTEBOOKS+E+PCS+MONTADOS" alt="Banner Notebooks e Computadores">
+        <div class="page-banner-text">
+          <h1>Notebooks, Monitores & PCs Montados</h1>
+          <p>Máquinas prontas para rodar os títulos mais exigentes com garantia e suporte técnico.</p>
+        </div>
+      </div>
+      <div class="container category-block">
+        <div class="product-grid">
+          <article class="product-card" data-id="nb-2" data-name="Notebook Gamer Titan 16' i7 RTX 4060" data-price="7499.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/22d3ee?text=Notebook+i7+RTX+4060" alt="Notebook Gamer Titan 16">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(29)</span></div>
+              <h3>Notebook Gamer Titan 16" Core i7-14700HX 16GB RTX 4060</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 8.299,00</span>
+                <span class="current-price">R$ 7.499,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="nb-4" data-name="Ultrabook Dev Pro 14' OLED 32GB RAM" data-price="6899.00">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/22d3ee?text=Ultrabook+OLED+32GB" alt="Ultrabook Dev Pro 14">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(19)</span></div>
+              <h3>Ultrabook Dev Pro 14" OLED 2.8K Core Ultra 7 32GB 1TB</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 7.599,00</span>
+                <span class="current-price">R$ 6.899,00</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="pc-1" data-name="PC Gamer Nexus Orion Ryzen 7 RTX 4070" data-price="8999.90">
+            <div class="product-img-wrapper">
+              <span class="discount-tag">PRONTO P/ USO</span>
+              <img src="https://placehold.co/400x300/1e293b/22d3ee?text=PC+Gamer+RTX+4070" alt="Desktop PC Gamer Gabinete Vidro Temperado RGB">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(52)</span></div>
+              <h3>PC Gamer Nexus Orion Ryzen 7 7700X 32GB DDR5 RTX 4070</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 9.899,00</span>
+                <span class="current-price">R$ 8.999,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="nb-1" data-name="Monitor Gamer 27' QHD IPS 240Hz 0.5ms" data-price="2199.90">
+            <div class="product-img-wrapper">
+              <img src="https://placehold.co/400x300/1e293b/22d3ee?text=Monitor+27+QHD+240Hz" alt="Monitor Gamer 27 Polegadas">
+            </div>
+            <div class="product-info">
+              <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(76)</span></div>
+              <h3>Monitor Gamer 27" QHD Fast IPS 240Hz 0.5ms HDR400</h3>
+              <div class="price-box">
+                <span class="old-price">R$ 2.599,00</span>
+                <span class="current-price">R$ 2.199,90</span>
+              </div>
+              <button class="btn btn-add-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 5: SOBRE NÓS -->
+    <section id="page-sobre" class="page-section">
+      <div class="container about-section">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://placehold.co/600x450/1e293b/00f0ff?text=LABORATORIO+NEXUSTECH" alt="Laboratório de montagem e testes de hardware da NexusTech">
+          </div>
+          <div class="about-content">
+            <span class="badge-promo">NOSSA HISTÓRIA</span>
+            <h1>Paixão por Tecnologia e Engenharia de Performance</h1>
+            <p>Fundada por entusiastas de hardware e engenheiros de computação, a <strong>NexusTech</strong> nasceu com a missão de democratizar o acesso aos componentes mais avançados do mercado global com transparência, garantia oficial e suporte especializado.</p>
+            <p>Cada máquina montada em nosso laboratório passa por 24 horas de testes de estresse térmico e estabilidade antes do envio.</p>
+            
+            <div class="stats-grid">
+              <div class="stat-item">
+                <strong>+45 mil</strong>
+                <span>Pedidos Entregues</span>
+              </div>
+              <div class="stat-item">
+                <strong>99,4%</strong>
+                <span>Avaliações Positivas</span>
+              </div>
+              <div class="stat-item">
+                <strong>24h</strong>
+                <span>Despacho Expresso</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 6: CONTATO -->
+    <section id="page-contato" class="page-section">
+      <div class="container contact-section">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h1>Fale com Nossos Especialistas</h1>
+            <p>Precisa de ajuda para escolher peças compatíveis ou acompanhar seu pedido? Envie uma mensagem.</p>
+            <ul class="contact-details">
+              <li><strong>Atendimento:</strong> Segunda a Sexta, 08h às 19h</li>
+              <li><strong>E-mail:</strong> suporte@nexustech.com.br</li>
+              <li><strong>Telefone / WhatsApp:</strong> (11) 4002-8922</li>
+              <li><strong>Centro de Distribuição:</strong> Av. Tecnologia, 1500 - São Paulo/SP</li>
+            </ul>
+            <img src="https://placehold.co/500x220/1e293b/00f0ff?text=SUPORTE+TECNICO+ESPECIALIZADO" alt="Equipe de suporte técnico NexusTech" class="contact-img">
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+              <small class="error-msg" id="error-nome"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+              <small class="error-msg" id="error-email"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto...</option>
+                <option value="duvida-tecnica">Compatibilidade / Dúvida Técnica</option>
+                <option value="pedido">Status do Pedido</option>
+                <option value="garantia">Garantia e RMA</option>
+                <option value="corporativo">Vendas Corporativas (B2B)</option>
+              </select>
+              <small class="error-msg" id="error-assunto"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+              <small class="error-msg" id="error-mensagem"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+            <div class="form-feedback" id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= CARRINHO LATERAL (DRAWER) ================= -->
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Compras">
+    <div class="cart-header">
+      <h2>Seu Carrinho</h2>
+      <button class="close-btn" id="close-cart-btn" aria-label="Fechar Carrinho">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cart-items-container">
+      <p class="empty-cart-msg">Seu carrinho está vazio no momento.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal:</span>
+        <strong id="cart-subtotal-value">R$ 0,00</strong>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkout-btn">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <!-- ================= MODAL INFORMATIVO DO RODAPÉ ================= -->
+  <div class="modal-backdrop" id="info-modal-backdrop">
+    <div class="info-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h2 id="modal-title">Título</h2>
+        <button class="close-btn" id="close-modal-btn" aria-label="Fechar Janela">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ================= RODAPÉ (FOOTER) ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#" class="logo footer-logo" data-page="inicio">
+          <img src="https://placehold.co/36x36/00f0ff/0a0e17?text=NT" alt="Logo NexusTech Rodapé">
+          <span>Nexus<strong>Tech</strong></span>
+        </a>
+        <p>Sua loja definitiva de hardware, periféricos gamers e estações de trabalho de alta performance.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="#sobre" data-page="sobre">Sobre a NexusTech</a></li>
+          <li><a href="#" data-modal="privacidade">Política de Privacidade</a></li>
+          <li><a href="#" data-modal="termos">Termos de Uso</a></li>
+          <li><a href="#" data-modal="trocas">Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="#hardware" data-page="hardware">Placas de Vídeo e CPUs</a></li>
+          <li><a href="#perifericos" data-page="perifericos">Teclados e Mouses</a></li>
+          <li><a href="#notebooks" data-page="notebooks">Notebooks e Monitores</a></li>
+          <li><a href="#" data-modal="faq">Perguntas Frequentes (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Formas de Pagamento</h3>
+        <div class="payment-badges">
+          <img src="https://placehold.co/65x38/1e293b/ffffff?text=PIX" alt="Pagamento via PIX">
+          <img src="https://placehold.co/65x38/1e293b/ffffff?text=VISA" alt="Cartão Visa">
+          <img src="https://placehold.co/65x38/1e293b/ffffff?text=MASTER" alt="Cartão Mastercard">
+          <img src="https://placehold.co/65x38/1e293b/ffffff?text=BOLETO" alt="Boleto Bancário">
+        </div>
+        <p class="security-note">Ambiente 100% Seguro com Criptografia SSL.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 NexusTech Informática Ltda. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de Notificação -->
+  <div class="toast" id="toast-notification">Produto adicionado ao carrinho!</div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
